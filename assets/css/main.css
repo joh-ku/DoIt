@@ -793,6 +793,10 @@ html.dark {
   margin: 0px;
 }
 
+.tw-m-10 {
+  margin: 2.5rem;
+}
+
 .\!tw-my-1 {
   margin-top: 0.25rem !important;
   margin-bottom: 0.25rem !important;
@@ -816,6 +820,11 @@ html.dark {
 .tw-mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.tw-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tw-my-1 {
@@ -870,6 +879,10 @@ html.dark {
   display: flex;
 }
 
+.tw-grid {
+  display: grid;
+}
+
 .tw-hidden {
   display: none;
 }
@@ -880,6 +893,10 @@ html.dark {
 
 .tw-h-\[90vh\] {
   height: 90vh;
+}
+
+.tw-h-dvh {
+  height: 100dvh;
 }
 
 .tw-h-fit {
@@ -929,6 +946,10 @@ html.dark {
   max-width: 100%;
 }
 
+.tw-max-w-screen-xl {
+  max-width: 1280px;
+}
+
 .tw-flex-1 {
   flex: 1 1 0%;
 }
@@ -952,6 +973,10 @@ html.dark {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+.tw-grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .tw-flex-row {
@@ -988,6 +1013,10 @@ html.dark {
 
 .tw-text-wrap {
   text-wrap: wrap;
+}
+
+.tw-rounded {
+  border-radius: 0.25rem;
 }
 
 .tw-rounded-full {
@@ -1033,8 +1062,20 @@ html.dark {
   padding-bottom: 2rem;
 }
 
+.tw-pl-2 {
+  padding-left: 0.5rem;
+}
+
+.tw-pr-2 {
+  padding-right: 0.5rem;
+}
+
 .tw-pt-32 {
   padding-top: 8rem;
+}
+
+.tw-pt-6 {
+  padding-top: 1.5rem;
 }
 
 .tw-text-center {
@@ -1061,6 +1102,11 @@ html.dark {
 
 .tw-text-fgColor-link-muted {
   color: var(--global-link-color);
+}
+
+.tw-text-slate-700 {
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity, 1));
 }
 
 .tw-opacity-0 {
@@ -1128,6 +1174,11 @@ html.dark {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.focus\:tw-bg-neutral-200:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity, 1));
+}
+
 .tw-group.is-open .group-\[\.is-open\]\:tw-block {
   display: block;
 }
@@ -1176,6 +1227,21 @@ html.dark {
 .dark\:tw-border-\[\#363636\]:is(.tw-dark *) {
   --tw-border-opacity: 1;
   border-color: rgb(54 54 54 / var(--tw-border-opacity, 1));
+}
+
+.dark\:tw-bg-neutral-700:is(.tw-dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 64 64 / var(--tw-bg-opacity, 1));
+}
+
+.dark\:tw-text-slate-200:is(.tw-dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity, 1));
+}
+
+.dark\:focus\:tw-bg-neutral-500:focus:is(.tw-dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(115 115 115 / var(--tw-bg-opacity, 1));
 }
 
 @media (min-width: 768px) {
